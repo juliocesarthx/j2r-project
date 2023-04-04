@@ -5,29 +5,34 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
   <body> 
-    
-   <nav> 
-    <a href="<%= root_path %>">
-      <%= image_tag "logoempresa.png" %>
-    </a>
-      <ul>
-        <li><%= link_to 'Inicio', root_path %></li>
-        <li><%= link_to 'Sobre nós', sobre_nos_path %></li>
-        <li><%= link_to 'Empresas do grupo', empresas_do_grupo_path %></li>
-        <li><%= link_to 'Nossos Serviços', nossos_servicos_path %></li>
-        <li><%= link_to 'Contato', contato_path %></li>
-      </ul>
-    </nav>
+    <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">     
+        <a href="<%= root_path %>", class="logo d-flex align-items-center">
+          <%= image_tag "logoempresa.png" %>
+        </a>   
 
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><%= link_to 'Inicio', root_path %></li>
+          <li><%= link_to 'Sobre nós', sobre_nos_path %></li>
+          <li><%= link_to 'Empresas do grupo', empresas_do_grupo_path %></li>
+          <li><%= link_to 'Nossos Serviços', nossos_servicos_path %></li>
+          <li><%= link_to 'Contato', contato_path %></li>          
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header --> 
    
-  
-    <%= yield %>
+   <%= yield %>
   </body>
 </html>
 
