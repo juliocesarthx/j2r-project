@@ -5,10 +5,14 @@
     "@hotwired/stimulus": "^3.2.1",
     "@hotwired/turbo-rails": "^7.3.0",
     "@popperjs/core": "^2.11.7",
+    "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.3",
     "esbuild": "^0.17.15",
-    "sass": "^1.60.0"
+    "font-awesome": "^4.7.0",
+    "glightbox": "^3.2.0",
+    "sass": "^1.60.0",
+    "swiper": "^9.2.0"
   },
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets",
