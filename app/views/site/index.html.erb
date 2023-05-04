@@ -32,6 +32,8 @@
     </div>
 
   </section>
+ 
+  <main id="main">
 
   <section id="constructions" class="constructions">
       <div class="container" data-aos="fade-up">
@@ -47,7 +49,7 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(<%= asset_path('amazonfortcard.png') %>)"></div>
+                  <div class="card-bg" style="background-image: url(<%= asset_path('cards/amazonfortcard.png') %>)"></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -63,7 +65,7 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(<%= asset_path('ecofortcard.jpeg') %>)"></div>
+                  <div class="card-bg" style="background-image: url(<%= asset_path('cards/ecofortcard.jpeg') %>)"></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -79,7 +81,7 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(<%= asset_path('amazonenergiacard.png') %>)"></div>
+                  <div class="card-bg" style="background-image: url(<%= asset_path('cards/amazonenergiacard.png') %>)"></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -95,7 +97,7 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(<%= asset_path('agroamazoncard.jpg') %>)"></div>
+                  <div class="card-bg" style="background-image: url(<%= asset_path('cards/agroamazoncard.jpg') %>)"></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -111,7 +113,7 @@
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(<%= asset_path('afengenhariacard.jpg') %>)"></div>
+                  <div class="card-bg" style="background-image: url(<%= asset_path('cards/afengenhariacard.jpg') %>)"></div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
@@ -123,5 +125,86 @@
             </div>
           </div>
 
+
+<section id="recent-blog-posts" class="recent-blog-posts">
+    <div class="container" data-aos="fade-up"">    
+    
+      <div class=" section-header">
+        <h2>Nosso Blog</h2>        
+      </div>
+
+      <div class="row gy-5">
+
+        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="post-item position-relative h-100">
+
+            <div class="post-img position-relative overflow-hidden">
+              <%= image_tag('blog/blog1.jpg', class: 'img-fluid', alt: '') %>
+              <span class="post-date">Março 6, 2023</span>
+            </div>
+
+            <div class="post-content d-flex flex-column">
+
+              <h3 class="post-title">Ecoparque Porto Velho realiza encontro com empresas transportadoras de resíduos</h3>             
+
+              <hr>
+
+              <a href="#" class="readmore stretched-link"><span>Leia mais</span><i class="bi bi-arrow-right"></i></a>
+
+            </div>
+
+          </div>
+        </div><!-- End post item -->
+
+        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="post-item position-relative h-100">
+
+            <div class="post-img position-relative overflow-hidden">
+              <%= image_tag('blog/blog2.jpg', class: 'img-fluid', alt: '') %>
+              <span class="post-date">Fevereiro 1, 2023</span>
+            </div>
+
+            <div class="post-content d-flex flex-column">
+
+              <h3 class="post-title">Orizon VR expande atuação para a região norte do país protegendo o meio ambiente e a floresta amazônica</h3>
+              
+
+              <hr>
+
+              <a href="#" class="readmore stretched-link"><span>Leia mais</span><i class="bi bi-arrow-right"></i></a>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6">
+          <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="post-img position-relative overflow-hidden">
+               <%= image_tag('blog/blog3.jpg', class: 'img-fluid', alt: '') %>
+              <span class="post-date">Janeiro 27, 2023</span>
+            </div>
+
+            <div class="post-content d-flex flex-column">
+
+              <h3 class="post-title">Grupo Amazon Fort será responsavel pelo complexo da estrada de ferro Madeira-Mamoré</h3>             
+
+              <hr>
+
+              <a href="#" class="readmore stretched-link"><span>Leia mais</span><i class="bi bi-arrow-right"></i></a>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      </div>
+    </section>
+    
+
+  </main>
 
           
