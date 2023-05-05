@@ -5,12 +5,18 @@ class SiteController < ApplicationController
   def sobre_nos
   end
 
-  def empresas_do_grupo
+  def nossos_clientes
   end
   
-  def nossos_servicos
+  def tecnologias_usadas
+  end
+
+  def equipe
   end
 
   def contato
+  end
+  
+  def trabalhe_conosco
   end
 end
